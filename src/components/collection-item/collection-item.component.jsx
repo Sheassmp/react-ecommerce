@@ -4,13 +4,13 @@ import {connect} from 'react-redux';
 import CustomButton from '../custom-button/custom-button.component';
 import {addItem} from '../../redux/cart/cart.actions';
 
-import './collection-itm.styles.scss';
+import './collection-item.styles.scss';
 
-const CollectionItm = ({item, addItem }) => {
+const CollectionItem = ({item, addItem }) => {
     const { name, price, imageUrl} = item;
 
     return (
-    <div className='collection-itm'>
+    <div className='collection-item'>
         <div
         className='image'
         style={{
@@ -32,4 +32,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
     null,
     mapDispatchToProps
-)(CollectionItm);
+)(CollectionItem);
